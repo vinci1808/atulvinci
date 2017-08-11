@@ -1,0 +1,17 @@
+DATE: 29/07/2017							page: 01
+code = P1111		   name = PRODUCT NAME 11opening balance = 0000000000000
+inv-no. date	   qty		   value
+inv01	20170330   1000   00000000000000
+inv01	20170330   1000   00000000000000
+inv03	20170330   1000   00000000000000
+inv03	20170330   1000   00000000000000
+inv04	20170710   1000   00000000000000
+						closing balance =  0000000000000
+			    +++++ end of page +++++DATE: 29/07/2017							page: 02
+code = P2222		   name = PRODUCT NAME 22opening balance = 0000000000000
+inv-no. date	   qty		   value
+inv02	20170710   1000   00000000000000
+inv02	20170710   1000   00000000000000
+inv02	20170710   1000   00000000000000
+						closing balance =  0000000000000
+			    +++++ end of page +++++

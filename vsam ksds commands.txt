@@ -1,0 +1,33 @@
+    MOVE WS-EMP-ID TO EMP-ID
+    READ EMPLOYEE-MASTER
+    INVALID KEY               (FS = 23)
+       DISPLAY 'RECORD NOT FOUND'
+    NOT INVALID KEY           (FS = 00)
+       DISPLAY 'RECORD HAS BEEN FOUND'
+    END-READ.
++++++++++++++
+    MOVE WS-EMP-ID TO EMP-ID
+    Move Details to the respective Fields
+    WRITE MASTER-RECORD
+    INVALID KEY               (FS = 22)
+       DISPLAY 'DUPLICATE RECORD'
+    NOT INVALID KEY           (FS = 00)
+       DISPLAY 'RECORD WRITTEN'
+    END-WRITE.
+++++++++++++++
+    MOVE WS-EMP-ID TO EMP-ID
+    Move Details to the respective Fields
+    REWRITE MASTER-RECORD
+    INVALID KEY               (FS = 23)
+       DISPLAY 'RECORD NOT FOUND'
+    NOT INVALID KEY           (FS = 00)
+       DISPLAY 'RECORD UPDATED'
+    END-REWRITE.
+++++++++++++++
+    MOVE WS-EMP-ID TO EMP-ID
+    DELETE EMPLOYEE-MASTER
+    INVALID KEY               (FS = 23)
+       DISPLAY 'RECORD NOT FOUND'
+    NOT INVALID KEY           (FS = 00)
+       DISPLAY 'RECORD DELETED'
+    END-DELETE.
